@@ -1,36 +1,30 @@
-'use strict';
+let num = 49;
 
-a = 5;
-console.log(a);
-let persone = {
-name : `Jhon`,
-age : 25,
-isMarried : false
+if (num < 49) {
+    console.log('False')
+} else if (num > 100) {
+    console.log("Many")
+} else {
+    console.log("True")
 };
-console.log(persone[`name`]);
 
-let arr = [`plum.png`,`orange.jpg`,`apple.bmp`];
+(num == 50) ? console.log('True') : console.log('False');
 
-console.log(arr[1]);
-
-//alert(`Hello World!`);
-
-//let answer = +prompt(`Are you here?`);
-// console.log(answer);
-// let answer = +prompt(`Are you here?` , `Yes`);
-// console.log(typeof(answer));
-// console.log(`arr` + `- object`);
-// console.log(4 + `- object`);
-
-let incr = 10,
-    decr = 10;
-
-
-console.log(incr++);
-console.log(decr--);
-console.log(5%2);
-console.log(`2` == 2);
-
-let isChecked = true,
-    isClose = true;
-console.log(isChecked && isClose);
+switch (num) {
+    case num < 49:
+        console.log("False");
+        break;
+    case num > 100:
+        console.log("Many");
+        break;
+    case num > 80:
+        console.log("Still More");
+        break;
+    case 50:
+        console.log("True");
+        break;
+    default:
+        console.log("Something went wrong")
+        break;
+            
+}
